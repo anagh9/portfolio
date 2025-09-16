@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anagh Kumar | Full Stack Developer & AI Specialist</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'sans': ['Inter', 'ui-sans-serif', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'Noto Sans', 'sans-serif'],
+                        'mono': ['Space Mono', 'ui-monospace', 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', 'Liberation Mono', 'Courier New', 'monospace'],
+                    },
+                    colors: {
+                        'custom-dark': '#0a0a0a', /* A very dark grey to mimic the example */
+                        'lime-400': '#a3e635', /* Bright lime green accent */
+                        'lime-500': '#84cc16', /* Slightly darker lime for hover */
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-custom-dark text-gray-300 font-sans">
+
+    <header class="bg-custom-dark/90 backdrop-blur-sm sticky top-0 z-50 py-4 border-b border-gray-800">
+        <nav class="container mx-auto px-6 flex justify-between items-center text-sm font-mono tracking-wide">
+            <a href="#" class="text-white hover:text-lime-400 transition-colors uppercase">anagh.dev</a>
+
+            <div class="hidden md:flex items-center space-x-8">
+<!--                <a href="#work" class="text-gray-400 hover:text-lime-400 transition-colors uppercase">Work</a>-->
+                <a href="#services-section" class="text-gray-400 hover:text-lime-400 transition-colors uppercase">Services</a>
+                <a href="#about" class="text-gray-400 hover:text-lime-400 transition-colors uppercase">About</a>
+                <a href="#contact-section" class="text-gray-400 hover:text-lime-400 transition-colors uppercase">Contact</a>
+            </div>
+
+            <div class="hidden md:block text-gray-400">
+                </div>
+
+            <button id="mobile-menu-button" class="md:hidden p-2 rounded-md text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                <span class="sr-only">Open main menu</span>
+                <svg class="h-6 w-6 block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </nav>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-custom-dark/95 border-t border-gray-800">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#work" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium uppercase">Work</a>
+                <a href="#services-section" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium uppercase">Services</a>
+                <a href="#about" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium uppercase">About</a>
+                <a href="#contact-section" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium uppercase">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="container mx-auto flex flex-col md:flex-row min-h-[calc(100vh-80px)] items-center px-6 py-12 md:py-0">
+            <div class="w-full md:w-1/2 lg:w-2/5 flex justify-center md:justify-end pr-0 md:pr-12 lg:pr-20 mb-8 md:mb-0 relative">
+                <div class="absolute inset-0 blur-xl opacity-20 bg-gradient-to-tr from-lime-400 via-emerald-500 to-cyan-400 rounded-full"></div>
+                <img src="{% static 'images/profile_image.jpg' %}" alt="Anagh Kumar" class="relative z-10 w-full max-w-xs md:max-w-sm lg:max-w-md h-auto object-cover rounded-full border border-gray-700 shadow-xl aspect-square">
+            </div>
+
+            <div class="w-full md:w-1/2 lg:w-3/5 text-center md:text-left">
+                <p class="text-sm font-mono text-gray-400 mb-4 tracking-wider">Hi, I'm Anagh Kumar</p>
+                <h1 class="text-4xl md:text-5xl lg:text-7xl font-extrabold text-white leading-tight mb-6">
+                    FULL STACK & <span class="text-lime-400">AI</span><br>DEVELOPER
+                </h1>
+                <p class="text-base lg:text-lg text-gray-400 max-w-xl md:max-w-2xl mb-8">
+                    I engineer immersive, high-performing web solutions and intelligent systems. Specializing in Python-based frameworks (Django, Flask), TypeScript, and advanced AI/ML models, I deliver robust CMS, dynamic dashboards, and data processing pipelines.
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center md:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="mailto:anagh.129@gmail.com" class="bg-lime-400 text-custom-dark px-8 py-3 rounded-md font-semibold hover:bg-lime-500 transition-colors shadow-lg">
+                        Get In Touch
+                    </a>
+
+<!--                    <a href="#work" class="border border-gray-700 text-gray-300 px-8 py-3 rounded-md font-semibold hover:bg-gray-800 transition-colors shadow-lg">-->
+<!--                        See My Work-->
+<!--                    </a>-->
+
+                </div>
+            </div>
+        </section>
+
+        <section id="services-section" class="bg-custom-dark py-20 border-t border-gray-800">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h3 class="text-4xl font-extrabold text-white mb-4">My Services</h3>
+                    <p class="text-lg text-gray-400 max-w-2xl mx-auto">I build end-to-end solutions that solve complex business problems and drive tangible results.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+
+                    <div class="bg-gray-900 p-8 rounded-lg border border-gray-700 hover:border-lime-400 transition-all duration-300 flex flex-col">
+                        <h4 class="text-2xl font-bold text-white mb-4 flex items-center">
+                            <span class="text-lime-400 mr-3 text-3xl">🧮</span> AI & Machine Learning
+                        </h4>
+                        <p class="text-gray-400 mb-6 flex-grow">
+                            Leveraging advanced algorithms and data science to build intelligent models that automate processes, predict outcomes, and uncover deep business insights.
+                        </p>
+                        <ul class="text-gray-300 space-y-3 text-left pl-4 list-disc list-outside">
+                            <li>Predictive Analytics & Forecasting Models</li>
+                            <li>Natural Language Processing (NLP) solutions for text analysis</li>
+                            <li>Custom Model Development & Seamless Deployment</li>
+                            <li>Expertise in Scikit-learn, TensorFlow, PyTorch, Hugging Face</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-gray-900 p-8 rounded-lg border border-gray-700 hover:border-lime-400 transition-all duration-300 flex flex-col">
+                        <h4 class="text-2xl font-bold text-white mb-4 flex items-center">
+                            <span class="text-lime-400 mr-3 text-3xl">💻</span> Full Stack Development
+                        </h4>
+                        <p class="text-gray-400 mb-6 flex-grow">
+                            Crafting robust, scalable, and secure web applications from the ground up, ensuring seamless functionality and exceptional user experiences.
+                        </p>
+                        <ul class="text-gray-300 space-y-3 text-left pl-4 list-disc list-outside">
+                            <li>Backend with Python (Django, Flask, FastAPI)</li>
+                            <li>RESTful API Design & High-Performance Implementation</li>
+                            <li>Dynamic Frontend Development with TypeScript (React/Vue)</li>
+                            <li>Database Architecture & Optimization (PostgreSQL, MySQL, MongoDB)</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-gray-900 p-8 rounded-lg border border-gray-700 hover:border-lime-400 transition-all duration-300 flex flex-col">
+                        <h4 class="text-2xl font-bold text-white mb-4 flex items-center">
+                            <span class="text-lime-400 mr-3 text-3xl">📊</span> Data Dashboards & CMS
+                        </h4>
+                        <p class="text-gray-400 mb-6 flex-grow">
+                            Transforming raw, complex data into intuitive, interactive dashboards and building tailored content management systems for effortless data and content control.
+                        </p>
+                        <ul class="text-gray-300 space-y-3 text-left pl-4 list-disc list-outside">
+                            <li>Interactive Business Intelligence & Analytics Dashboards</li>
+                            <li>ETL Pipelines for Data Integration & Warehousing</li>
+                            <li>Headless & Traditional CMS Development (Django CMS, custom)</li>
+                            <li>Technologies: Plotly Dash, Pandas, Apache Superset, Power BI Integration</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+<!--        <section id="work" class="bg-custom-dark py-20 border-t border-gray-800">-->
+<!--            <div class="container mx-auto px-6 text-center">-->
+<!--                <h3 class="text-4xl font-extrabold text-white mb-4">My Work</h3>-->
+<!--                <p class="text-lg text-gray-400 max-w-2xl mx-auto mb-8">-->
+<!--                    Explore a selection of projects demonstrating my expertise in full-stack development, AI/ML, and data solutions.-->
+<!--                </p>-->
+<!--                <a href="#" class="bg-gray-800 text-gray-300 px-8 py-3 rounded-md font-semibold hover:bg-gray-700 transition-colors shadow-lg">-->
+<!--                    View All Projects (Coming Soon!)-->
+<!--                </a>-->
+<!--                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-16">-->
+<!--                    <div class="bg-gray-900 p-6 rounded-lg border border-gray-700 flex flex-col items-start text-left">-->
+<!--                        <img src="https://via.placeholder.com/600x400?text=Project+1+Image" alt="Project Placeholder" class="w-full h-auto rounded-md mb-4">-->
+<!--                        <h4 class="text-2xl font-bold text-white mb-2">Project Title 1: AI-Powered Data Processor</h4>-->
+<!--                        <p class="text-gray-400 mb-4 flex-grow">Developed an automated system using Django and TensorFlow to process large datasets, extract key entities, and generate predictive reports.</p>-->
+<!--                        <a href="#" class="text-lime-400 hover:text-lime-500 font-semibold flex items-center">-->
+<!--                            View Case Study <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>-->
+<!--                        </a>-->
+<!--                    </div>-->
+<!--                    <div class="bg-gray-900 p-6 rounded-lg border border-gray-700 flex flex-col items-start text-left">-->
+<!--                        <img src="https://via.placeholder.com/600x400?text=Project+2+Image" alt="Project Placeholder" class="w-full h-auto rounded-md mb-4">-->
+<!--                        <h4 class="text-2xl font-bold text-white mb-2">Project Title 2: Custom E-commerce CMS</h4>-->
+<!--                        <p class="text-gray-400 mb-4 flex-grow">Built a scalable e-commerce platform with Django and React (TypeScript), featuring custom product management, order processing, and analytics dashboard.</p>-->
+<!--                        <a href="#" class="text-lime-400 hover:text-lime-500 font-semibold flex items-center">-->
+<!--                            View Case Study <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>-->
+<!--                        </a>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </section>-->
+
+
+        <section id="about" class="bg-custom-dark py-20 border-t border-gray-800">
+            <div class="container mx-auto px-6 text-center max-w-4xl">
+                <h3 class="text-4xl font-extrabold text-white mb-4">About Me</h3>
+                <p class="text-lg text-gray-400 mb-8">
+                    With a passion for solving complex problems through elegant code, I thrive on building innovative web solutions and intelligent systems. My journey in development has been driven by a curiosity for new technologies and a commitment to delivering high-quality, impactful software.
+                </p>
+                <p class="text-lg text-gray-400">
+                    Beyond the code, I enjoy staying updated with the latest advancements in AI, exploring new data visualization techniques, and contributing to open-source projects. I believe in continuous learning and leveraging my diverse skill set to create products that make a real difference.
+                </p>
+                </div>
+        </section>
+
+    </main>
+
+    <footer id="contact-section" class="bg-gray-900 py-16 border-t border-gray-800">
+        <div class="container mx-auto px-6 text-center">
+            <h3 class="text-4xl font-extrabold text-white mb-6">Let's build something great.</h3>
+            <p class="text-xl text-gray-400 mb-8 max-w-2xl mx-auto">
+                Whether you have a groundbreaking idea or a challenging technical problem, I'm eager to help bring your vision to life. Reach out and let's discuss how my expertise can drive your next project.
+            </p>
+            <a href="mailto:anagh.129@gmail.com" class="bg-lime-400 text-custom-dark px-10 py-4 rounded-md font-bold text-lg hover:bg-lime-500 transition-colors shadow-xl">
+                anagh.129@gmail.com
+            </a>
+            <p class="text-gray-600 mt-12 text-sm">&copy; 2023 Anagh Kumar. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => { mobileMenu.classList.toggle('hidden'); });
+    </script>
+
+</body>
+</html>
